@@ -6,4 +6,4 @@ output/penguin_class.csv: analysis/classify_penguins.R
 output/penguin_pairs.png: analysis/plot_penguin.R
 	$(rexec) $<
 
-# penguin_report.html: penguin_report.qmd penguin_class.csv penguin_pairs.png
+# penguin_report.html: analysis/penguin_report.qmd output/penguin_class.csv output/penguin_pairs.png
